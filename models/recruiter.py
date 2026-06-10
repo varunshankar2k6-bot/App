@@ -1,11 +1,12 @@
+#Inheriting from user class
 from models.user import User
-
+#Defing the class
 class Recruiter(User):
-
+    #Defing the init function with company name addition
     def __init__(self, name, email, company_name):
         super().__init__(name, email)
         self.company_name = company_name
-
+    #Defing the post_job with job title attribute
     def post_job(self, job_title):
         print(self.company_name, "posted as", job_title)
 
