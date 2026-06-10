@@ -1,0 +1,2 @@
+class JobPortalException(Exception):
+    pass
