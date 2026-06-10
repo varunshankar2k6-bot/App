@@ -11,3 +11,9 @@ class JobSeeker(User):
     @logger
     def apply_job(self, job_title):
         print(self.name, "applied for the position ", job_title)
+#Question 9 using logger function
+from utils.decorators import logger
+
+@logger
+def apply_job(self, job_title):
+    print(self.name, "applied for", job_title)
